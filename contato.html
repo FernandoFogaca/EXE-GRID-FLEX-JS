@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Completo JS</title>
+    <link rel="stylesheet" href="layout.css">
+    <script src="requisicoes.js"></script>
+    <script src="contato.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Contato</h1>
+        <a href="index.html">Principal</a>
+        <a href="#">Contato</a>
+    </header>
+
+
+    <main>
+
+        <div>
+            <input type="text" name="" id="inputNome">
+            <input type="text" name="" id="inputSobrenome">
+            <input type="text" name="" id="inputEmail">
+            <textarea name="" id="inputMensagem" cols="30" rows="10"></textarea>
+            <button onclick="processarEnvioFormulario()">Enviar</button>
+
+            <div>
+                Retorno da API:
+                <div id="resultadoEnvio">
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+</body>
+</html>

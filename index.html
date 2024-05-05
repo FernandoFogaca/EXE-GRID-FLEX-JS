@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Completo JS</title>
+    <link rel="stylesheet" href="layout.css">
+    <script src="soma.js"></script>
+    <script src="requisicoes.js"></script>
+    <script src="index.js"></script>
+</head>
+
+<body>
+
+    <header class="cabecalhoAoLado">
+        <a class="navButton" href="#">Principal</a>
+        <a class="navButton" href="contato.html">Contato</a>
+    </header>
+
+    <header class="cabecalhoPrincipal">
+        <h1>Treinando</h1>
+    </header>
+
+    <main class="principal">
+        <div class="card">
+            <div class="coluna">
+                <input placeholder="Digite um número" type="number" name="" id="inputNumeroUm">
+                <input placeholder="Digite um número" type="number" name="" id="inputNumeroDois">
+                <button onclick="processarSoma()">Somar</button>
+            </div>
+
+            <div class="coluna caixaResultado">
+                <div class="labelResultado">
+                    Resultado:
+                </div>
+                <div class="valorResultado" id="resultadoSoma">
+                    0
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="coluna">
+                <input type="text" name="" id="idPokemon">
+                <button onclick="processarPokemon()">Buscar</button>
+            </div>
+
+            <div class="coluna caixaResultado">
+                <div class="labelResultado">
+                    Nome: <span class="nomePokemon" id="nomePokemon"></span>
+                </div>
+                
+                <img class="imagemResultado" id="imagemPokemon" src="" alt="">
+            </div>
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <author>
+            <p>Designed By:</p>
+            <p>Fernando Fogaça</p>
+        </author>
+    </footer>
+</body>
+
+</html>

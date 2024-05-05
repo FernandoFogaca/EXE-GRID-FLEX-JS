@@ -1,0 +1,190 @@
+
+/*
+Amarelo:
+#FCE6A8
+Verde:
+#D2E4E1
+Cinza claro:
+#E3E8ED
+Cinza médio:
+#CED8E0
+Cinza escuro:
+#788896
+*/
+
+/* RESETS */
+body {
+    margin: 0px;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 0px;
+}
+
+
+/* LAYOUT */
+body {
+    background-color: #FCE6A8;
+    padding: 8px;
+
+    display: grid;
+    gap: 8px;
+
+    grid-template-columns: 0.2fr 0.8fr;
+    grid-template-rows: 0.1fr 0.8fr 0.1fr;
+
+    grid-template-areas:
+        "cabecalhoAoLado cabecalhoPrincipal"
+        "principal principal"
+        "rodape rodape";
+}
+
+.cabecalhoAoLado, .cabecalhoPrincipal, .principal, .rodape {
+    background-color: #D2E4E1;
+}
+
+.cabecalhoAoLado {
+    grid-area: cabecalhoAoLado;
+
+    display: flex;
+
+    padding: 10px;
+    gap: 10px;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.cabecalhoPrincipal {
+    grid-area: cabecalhoPrincipal;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.principal {
+    grid-area: principal;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 15px 8px;
+    gap: 8px;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.rodape {
+    grid-area: rodape;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.rodape p {
+    margin: 1px;
+}
+
+
+
+/* COMPONENTES */
+
+
+.navButton {
+    background-color: #788896;
+    padding: 8px 12px 8px 12px;
+    
+    border-radius: 5px;
+
+    text-decoration: none;
+    color: white;
+}
+
+.card { /* Linha */
+    background-color: #E3E8ED;
+
+    flex-grow: 1;
+
+    min-width: 400px;
+    max-width: 400px;
+
+    padding: 15px;
+
+    display: flex;
+    gap: 15px;
+}
+
+.coluna {
+    flex-basis: 0;
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 5px;
+}
+
+.coluna input {
+    width: 100%;
+    padding: 10px;
+
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: solid #CED8E0 3px;
+}
+
+.coluna button {
+    padding: 10px;
+    background-color: #788896;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.caixaResultado {
+    background-color: #CED8E0;
+    border: solid 2px #788896;
+
+    display: flex;
+
+    align-items: start;
+    justify-content: start;
+}
+
+.labelResultado {
+    padding: 5px;
+}
+
+.valorResultado {
+    /* TODO - Aqui faltou uma solução */
+    align-self: center;
+    /* justify-self: center; */
+    margin-top: auto;
+    margin-bottom: auto;
+
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.imagemResultado {
+    /* TODO - Aqui faltou uma solução */
+    align-self: center;
+    /* justify-self: center; */
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.nomePokemon {
+    text-transform: capitalize;
+}
